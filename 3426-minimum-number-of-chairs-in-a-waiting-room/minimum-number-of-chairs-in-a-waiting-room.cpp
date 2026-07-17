@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minimumChairs(string s) {
-        int chair=0;
+        int maxx=0;
         int curr=0;
         for(auto x:s)
         {
@@ -13,9 +13,9 @@ public:
             {
                 curr--;
             }
-            chair=max(chair,curr);
+            maxx=max(maxx,curr);
         }
-        return chair;
+        return maxx;
         
     }
 };
