@@ -10,18 +10,18 @@ public:
                 return mid;
             }
 
-            // Check if the left half is sorted
+            
             if (nums[l] <= nums[mid]) {
-                // Target lies within the sorted left half
+                
                 if (nums[l] <= target && target < nums[mid]) {
                     r = mid - 1;
                 } else {
                     l = mid + 1;
                 }
             } 
-            // Otherwise, the right half must be sorted
+            
             else {
-                // Target lies within the sorted right half
+                
                 if (nums[mid] < target && target <= nums[r]) {
                     l = mid + 1;
                 } else {
